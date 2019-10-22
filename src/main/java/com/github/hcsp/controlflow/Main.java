@@ -11,8 +11,8 @@ public class Main {
      */
     public static int countUpperCaseLetters(String str) {
         int upperCaseLetterCount = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') {
+        for (char letter : str.toCharArray()) {
+            if (letter >= 'A' && letter <= 'Z') {
                 upperCaseLetterCount++;
             }
         }
